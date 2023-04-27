@@ -1,0 +1,144 @@
+.infoHeader {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logoHeader {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    height: 105px;
+}
+
+.logoHeader h2 {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.infoTextHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+
+.infoTextHeader h1 {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+.numberInfoHeader {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.boxInfoHeader {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxInfoHeader p:nth-child(2) {
+    font-weight: bold;
+}
+
+.circleNumberHeader {
+    background-color: #EA5455;
+    padding: 6px 10px;
+    border-radius: 50px;
+}
+
+.circleNumberHeader p {
+    color: white;
+}
+
+.navSreachHeader {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #2D4059;
+    padding: 30px 0;
+}
+
+.headerSreach input{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.headerSreach input:nth-child(odd) {
+    padding: 0 20px;
+    width: 128px;
+}
+
+.headerSreach input:nth-child(even) {
+    width: 299px;
+}
+
+.headerSreach input:nth-child(1) {
+    background-color: #E5E5E5;
+    border: 1px solid #8f8f8f;
+}
+
+.headerSreach input:nth-child(3) {
+    color: white;
+    background-color: #EA5455;
+    border: 1px solid rgb(88, 48, 48);
+}
+
+.navbarHeader {
+    display: flex;
+    gap: 30px;
+}
+
+.navbarHeader a, i{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+
+    .logoHeader {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .infoHeader {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoTextHeader {
+        padding: 0px;
+    }
+
+    .infoTextHeader h1 {
+        text-align: right;
+    }
+
+    .numberInfoHeader {
+        display: none;
+    }
+
+    .navSreachHeader {
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .headerSreach {
+        display: none;
+    }
+
+}
