@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('path/to/font/fontawesome-webfont.eot?v=4.7.0');
+    src: url('path/to/font/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+         url('path/to/font/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+         url('path/to/font/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+         url('path/to/font/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+         url('path/to/font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw 0 10vw;
+}
+
+main .categories ul li {
+    padding: 10px;
+    font-size: 20px;
+    color: #727272;
+}
+
+main .categories ul li:first-child::before {
+    content: "\f009";
+  display: inline-block;
+  font-family: 'Font Awesome';
+}
+
+main .categories ul li:nth-child(2) {
+    color: #EA5455;
+}
+
+main .categories ul li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 5px solid #727272;
+    vertical-align: middle;
+}
+
+main .categories ul li:nth-child(2):before {
+    border: 5px solid #EA5455;
+    background-color: #EA5455;
+  }
+
+main figure {
+    box-shadow: 0px 0 10px black;
+    background-color: white;
+    padding: 20px;
+}
+
+main .options_affichage {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .affichage article  {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .affichage article figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .affichage article figure h2 {
+    padding: 10px 0 10px 0;
+}
+
+main .affichage article figure figcaption {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .affichage article figure figcaption strong {
+    color: #42CC58;
+}
+
+
+
+main .element_principal {
+    width: 850px;
+    height: 250px;
+}
+
+main article {
+    display: flex;
+}
