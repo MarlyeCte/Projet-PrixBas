@@ -1,4 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27");
+footer .footer__1 {
+  height: 150px;
+  background-color: #2D4059;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw 0 10vw;
+}
+
+footer .footer__1 i {
+  background-color: white;
+  color: #EA5455;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+footer .footer__1 .bloc {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer__1 .bloc h2 {
+  font-size: 18px;
+  width: 200px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+footer .footer__1 .bloc p {
+  font-size: 13px;
+  width: 200px;
+  padding: 5px;
+}
+
+footer .footer__2 {
+  background-color: #E5E5E5;
+  color: #2D4059;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  padding: 0 10vw 0 10vw;
+}
+
+footer .footer__2 ul li {
+  padding: 15px;
+}
+
+footer .footer__3 {
+  background-color: #2D4059;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
 .main-home h2 {
   color: #EA5455;
   font-size: 2rem;
