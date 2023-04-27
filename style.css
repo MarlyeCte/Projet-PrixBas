@@ -1,4 +1,61 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27");
+footer .footer__1 {
+  height: 150px;
+  background-color: #2D4059;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw 0 10vw;
+}
+
+footer .footer__1 i {
+  background-color: white;
+  color: #EA5455;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+footer .footer__1 .bloc {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer__1 .bloc h2 {
+  font-size: 18px;
+  width: 200px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+footer .footer__1 .bloc p {
+  font-size: 13px;
+  width: 200px;
+  padding: 5px;
+}
+
+footer .footer__2 {
+  background-color: #E5E5E5;
+  color: #2D4059;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  padding: 0 10vw 0 10vw;
+}
+
+footer .footer__2 ul li {
+  padding: 15px;
+}
+
+footer .footer__3 {
+  background-color: #2D4059;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
 .main-home h2 {
   color: #EA5455;
   font-size: 2rem;
@@ -39,7 +96,7 @@
 .box-carrousel {
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.1);
 }
 
 .text-inline-carrousel {
@@ -49,6 +106,76 @@
 
 .stock {
   color: limegreen;
+}
+
+.catégories {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.titre-catégories {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.box-catégories {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-catégories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  background-color: #2D4059;
+  border-radius: 20px;
+  font-size: 20px;
+  min-width: 130px;
+  gap: 10px;
+}
+
+.item-catégories i {
+  font-size: 50px;
+}
+
+.choix {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box-choix {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item-choix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  color: #EA5455;
+  margin-bottom: 20px;
+}
+
+.item-choix h4 {
+  font-size: 1.2rem;
+}
+
+.item-choix img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 html, body, div, span, applet, object, iframe,
