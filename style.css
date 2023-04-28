@@ -241,6 +241,104 @@ footer .footer__3 {
   color: limegreen;
 }
 
+.allProductAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.allProduct {
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+
+.productAddCart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.imgAdd img {
+  width: 400px;
+  height: auto;
+}
+
+.textAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+  padding-top: 10px;
+  font-size: 23px;
+}
+
+.textAdd p:nth-child(3):not(.addMore p) {
+  margin-top: 20px;
+}
+
+.addCartText {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.addMore {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.addMore div {
+  height: 100%;
+  width: 1px;
+  background-color: black;
+  margin: 0 20px;
+}
+
+.addMore p:nth-child(3) {
+  color: #EA5455;
+}
+
+.addCartText input {
+  padding: 0 20px;
+  height: 47px;
+  background-color: #EA5455;
+  color: white;
+  border-radius: 7px;
+  border: 1px solid #EA5455;
+}
+
+.fa-heart {
+  color: #2D4059;
+}
+
+.itemViewSell {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .allProduct {
+    width: 100%;
+  }
+  .textAdd {
+    align-items: center;
+  }
+  .textAdd p {
+    text-align: center;
+  }
+  .itemViewSell {
+    margin-top: 50px;
+    justify-content: center;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
