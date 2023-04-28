@@ -14,7 +14,14 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 0 10vw 0 10vw;
+    margin: 10vh 0 25vh 0;
 }
+
+main .categories {
+    width: 25vw;
+}
+
+// Gestion de la liste Catégories 
 
 main .categories ul li {
     padding: 10px;
@@ -46,17 +53,68 @@ main .categories ul li::before {
 main .categories ul li:nth-child(2):before {
     border: 5px solid #EA5455;
     background-color: #EA5455;
-  }
+}
+
+// Fin de Gestion de la liste Catégories
 
 main figure {
     box-shadow: 0px 0 10px black;
     background-color: white;
     padding: 20px;
+    margin: 10px;
 }
 
-main .options_affichage {
+main .affichage {
+    width: 55vw;
+}
+
+main .affichage .options_affichage {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
+}
+
+main .affichage .options_affichage p {
+    font-size: 18px;
+}
+
+main .affichage .options_affichage i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+main .affichage .options_affichage button {
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #EA5455;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+main .affichage .options_affichage button i {
+    position: absolute;
+    right: 0;
+    top: 35%;
+}
+
+main .affichage .element_principal {
+    height: 250px;
+    margin-bottom: 8vh;
+    display: flex;
+}
+
+main .affichage .element_principal figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 0 80px;
 }
 
 main .affichage article  {
@@ -79,15 +137,8 @@ main .affichage article figure figcaption {
     justify-content: space-between;
 }
 
-main .affichage article figure figcaption strong {
+main figure figcaption strong {
     color: #42CC58;
-}
-
-
-
-main .element_principal {
-    width: 850px;
-    height: 250px;
 }
 
 main article {
