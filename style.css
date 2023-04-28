@@ -131,16 +131,6 @@ main .categories ul li {
   color: #727272;
 }
 
-main .categories ul li:first-child::before {
-  content: "\f009";
-  display: inline-block;
-  font-family: "Font Awesome";
-}
-
-main .categories ul li:nth-child(2) {
-  color: #EA5455;
-}
-
 main .categories ul li::before {
   content: "";
   display: inline-block;
@@ -152,9 +142,24 @@ main .categories ul li::before {
   vertical-align: middle;
 }
 
+main .categories ul li:nth-child(2) {
+  color: #EA5455;
+}
+
 main .categories ul li:nth-child(2):before {
   border: 5px solid #EA5455;
   background-color: #EA5455;
+}
+
+main .categories ul li:first-child {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main .categories ul li:first-child:before {
+  border: 5px solid black;
+  background-color: black;
 }
 
 main figure {
@@ -172,6 +177,7 @@ main .affichage .options_affichage {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  padding-bottom: 25px;
 }
 
 main .affichage .options_affichage p {
@@ -196,16 +202,17 @@ main .affichage .options_affichage button {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 20px;
 }
 
 main .affichage .options_affichage button i {
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 35%;
 }
 
 main .affichage .element_principal {
-  height: 250px;
+  height: 25vh;
   margin-bottom: 8vh;
   display: flex;
 }
@@ -226,6 +233,8 @@ main .affichage article figure {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 25%;
+  height: 25%;
 }
 
 main .affichage article figure h2 {
