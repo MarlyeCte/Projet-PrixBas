@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27");
 footer .footer__1 {
   height: 150px;
@@ -229,7 +230,7 @@ footer .footer__3 {
 .box-carrousel {
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.1);
 }
 
 .text-inline-carrousel {
@@ -239,6 +240,76 @@ footer .footer__3 {
 
 .stock {
   color: limegreen;
+}
+
+.catégories {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.titre-catégories {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.box-catégories {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-catégories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  background-color: #2D4059;
+  border-radius: 20px;
+  font-size: 20px;
+  min-width: 130px;
+  gap: 10px;
+}
+
+.item-catégories i {
+  font-size: 50px;
+}
+
+.choix {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box-choix {
+  margin: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.item-choix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  color: #EA5455;
+  margin-bottom: 20px;
+}
+
+.item-choix h4 {
+  font-size: 1.2rem;
+}
+
+.item-choix img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .allProductAll {
@@ -339,6 +410,153 @@ footer .footer__3 {
     justify-content: center;
   }
 }
+@font-face {
+  font-family: "Font Awesome";
+  src: url("path/to/font/fontawesome-webfont.eot?v=4.7.0");
+  src: url("path/to/font/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("path/to/font/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("path/to/font/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("path/to/font/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("path/to/font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.allCatégorie {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vw 0 10vw;
+  margin: 10vh 0 25vh 0;
+}
+
+.allCatégorie .categories {
+  width: 25vw;
+}
+
+.allCatégorie .categories ul li {
+  padding: 10px;
+  font-size: 20px;
+  color: #727272;
+}
+
+.allCatégorie .categories ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 5px solid #727272;
+  vertical-align: middle;
+}
+
+.allCatégorie .categories ul li:nth-child(2) {
+  color: #EA5455;
+}
+
+.allCatégorie .categories ul li:nth-child(2):before {
+  border: 5px solid #EA5455;
+  background-color: #EA5455;
+}
+
+.allCatégorie .categories ul li:first-child {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.allCatégorie .categories ul li:first-child:before {
+  border: 5px solid black;
+  background-color: black;
+}
+
+.allCatégorie figure {
+  box-shadow: 0px 0 10px black;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+}
+
+.allCatégorie .affichage {
+  width: 55vw;
+}
+
+.allCatégorie .affichage .options_affichage {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding-bottom: 25px;
+}
+
+.allCatégorie .affichage .options_affichage p {
+  font-size: 18px;
+}
+
+.allCatégorie .affichage .options_affichage i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.allCatégorie .affichage .options_affichage button {
+  width: 240px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #EA5455;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.allCatégorie .affichage .options_affichage button i {
+  position: absolute;
+  right: 5px;
+  top: 35%;
+}
+
+.allCatégorie .affichage .element_principal {
+  height: 25vh;
+  margin-bottom: 8vh;
+  display: flex;
+}
+
+.allCatégorie .affichage .element_principal figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0 0 80px;
+}
+
+.allCatégorie .affichage article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allCatégorie .affichage article figure {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  height: 25%;
+}
+
+.allCatégorie .affichage article figure h2 {
+  padding: 10px 0 10px 0;
+}
+
+.allCatégorie .affichage article figure figcaption {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allCatégorie figure figcaption strong {
+  color: #42CC58;
+}
+
+.allCatégorie article {
+  display: flex;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
